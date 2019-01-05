@@ -168,7 +168,9 @@ public class PollingService extends GcmTaskService {
                         .setContentTitle(title)
                         .setContentText(msg)
                         .setContentIntent(contentIntent)
-                        .setAutoCancel(true);
+                        .setAutoCancel(true)
+            //need to set BADGE_ICON_SMALL?
+                        .setBadgeIconType(NotificationCompat.BADGE_ICON_SMALL);
         mNotificationManager.notify(0, mBuilder.build());
     }
 
