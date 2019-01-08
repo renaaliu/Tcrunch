@@ -305,6 +305,7 @@ public class TeacherTicketListActivity extends AppCompatActivity implements
                         classList.clear();
                         classListView.getMenu().clear();
                         for (DataSnapshot classSnapshot: dataSnapshot.getChildren()) {
+                                //display of classes should be ordered by recent-cy
                             Classroom cr = classSnapshot.getValue(Classroom.class);
                             classListView.getMenu().add(cr.getName());
                             classList.add(cr.getName());
