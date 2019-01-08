@@ -294,7 +294,7 @@ public class TeacherTicketDetailActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         int id = item.getItemId();
-
+//option to select all tickets for the class to export
         if (id == R.id.email_ticket_data) {
             exportTicketToCSV();
             return true;
