@@ -295,6 +295,7 @@ public class TeacherTicketDetailActivity extends AppCompatActivity {
 
         int id = item.getItemId();
 
+	// RENA Add an option to export all tickets in a class
         if (id == R.id.email_ticket_data) {
             exportTicketToCSV();
             return true;
