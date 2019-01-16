@@ -169,7 +169,7 @@ public class PollingService extends GcmTaskService {
                         .setContentText(msg)
                         .setContentIntent(contentIntent)
 	                // RENA add line to display notification badges
-     	                //.setBadgeIconType(NotificationCompat.BADGE_ICON_SMALL)
+     	                .setBadgeIconType(NotificationCompat.BADGE_ICON_SMALL)
 	                .setAutoCancel(true);
         mNotificationManager.notify(0, mBuilder.build());
     }
